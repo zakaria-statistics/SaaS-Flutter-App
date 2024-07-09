@@ -72,7 +72,7 @@ class _MyAppState extends State<MyApp> {
       }
     });
   }
-
+// git test
   @override
   void initState() {
     checkIfLogin();
