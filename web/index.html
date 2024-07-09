@@ -19,6 +19,7 @@
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="A new Flutter project.">
+  <meta name="google-signin-client_id" content="895108934473-6k4t5iuil879ggr4kkmkij8tnbhkg8qd.apps.googleusercontent.com">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -27,10 +28,38 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="assets/svg/zitech_blue_bg_logo.png"/>
 
   <title>my_web_app</title>
   <link rel="manifest" href="manifest.json">
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+    import { getStorage } from "firebase/storage";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBZZNYh6IHjR1hQsbcJN44C3cYGkiX7tLg",
+      authDomain: "firstapp-6a3b2.firebaseapp.com",
+      projectId: "firstapp-6a3b2",
+      storageBucket: "firstapp-6a3b2.appspot.com",
+      messagingSenderId: "895108934473",
+      appId: "1:895108934473:web:511aa7763d359bf3e94898",
+      measurementId: "G-FEY8LE47TB"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+  <script>
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-storage.js";
+  </script>
+
 
   <script>
     // The value below is injected by flutter build, do not touch.
